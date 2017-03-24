@@ -2,6 +2,8 @@
 
 > 自己简单集成百度编辑器Ueditor的例子
 
+![](https://github.com/zhikeye/vue2-ueditor/blob/master/static/demo.png)
+
 ## Build Setup
 
 ``` bash
