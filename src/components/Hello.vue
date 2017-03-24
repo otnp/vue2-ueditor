@@ -3,10 +3,11 @@
     <h1>{{ msg }}</h1>
     <div style="margin-left:auto;margin-right:auto;width:1200px;">
     <v-ueditor
-     :inputContent="cont"
-        v-model="cont"
-        @on-content-change="change">
-        </v-ueditor>
+           ref="ueditor"
+           :inputcontent="cont"
+              v-model="cont"
+              @on-content-change="change">
+              </v-ueditor>
       </div>  
   </div>
 </template>
@@ -25,6 +26,9 @@ export default {
   methods: {
     change (val) {
       this.cont = val
+    },
+    setCont () {
+      this.$refs.ueditor.setContent('这是重新设置的内容')
     }
   },
   components: {
